@@ -8,8 +8,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="microsoft.aspnetcore.mvc.versioning" Version="5.1.0" />
+    <PackageReference Include="microsoft.aspnetcore.mvc.versioning.apiexplorer" Version="5.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PharmacySystem.DataAccess\PharmacySystem.DataAccess.csproj" />
+    <ProjectReference Include="..\PharmacySystem.Domain\PharmacySystem.Domain.csproj" />
   </ItemGroup>
 
 </Project>
